@@ -197,6 +197,7 @@ enum Page {
 }
 
 #[repr(u8)]
+#[derive(Clone, Copy, Debug)]
 pub enum PwmFreq {
     /// 29kHz
     P29k = 0x00,
